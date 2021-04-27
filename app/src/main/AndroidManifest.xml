@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BMICalc">
-        <activity android:name=".ResultActivity"></activity>
+
+        <!-- parentActivityName 속성은 뒤로가기 버튼을 보여주고 버튼을 눌렀을 때 그쪽으로 이동함 -->
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".MainActivity"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

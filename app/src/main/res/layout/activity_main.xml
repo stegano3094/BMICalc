@@ -7,12 +7,12 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/inputUserHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Name"
+        android:inputType="number"
+        android:hint="Height (단위 : cm)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,16 +20,16 @@
         app:layout_constraintVertical_bias="0.39" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/inputUserWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:inputType="text"
-        android:hint="Name"
+        android:inputType="number"
+        android:hint="Weight (단위 : Kg)"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/inputUserHeight" />
 
     <Button
         android:id="@+id/calc"
@@ -37,8 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="BMI Calculate"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputUserWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
